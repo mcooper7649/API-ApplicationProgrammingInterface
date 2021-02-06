@@ -55,4 +55,28 @@ http://api.openweathermap.org/data/2.5/weather?q=Miami&appid=2c1fc8934a26e431f31
 
 
 
+## JSON 
+---
 
+[JSON-ViewerChromeExtension](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related)
+
+What is JSON?
+    - JavaScript Object Notation 
+    - Most Popular and Modern Type of API Call Format
+    - This is similiar to an object when we declare one in JS; 
+        - Readable by a Human or Computer
+        - Can be compressed into a single string
+    
+Pro-Tip
+    - Use the JSON Viewer Extension when trying to read the API call.
+
+
+Weather Project Challenge
+---
+
+1. Create Directory And Initial App.js and Index.html
+2. NPM init - Configure
+3. NPM I Express
+4. Add Express to App.js (const express = require("expres"))
+5. Add https the same way we added express.
+6. app.get your landing url and in the callback configure the https, API CALL url and log it.
