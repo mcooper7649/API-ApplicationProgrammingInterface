@@ -60,15 +60,38 @@ http://api.openweathermap.org/data/2.5/weather?q=Miami&appid=2c1fc8934a26e431f31
 
 [JSON-ViewerChromeExtension](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related)
 
+[Mozilla-HTTP-Status-Codes] (developer.mozilla.org/en-us/docs/web/http/status)
+
 What is JSON?
     - JavaScript Object Notation 
     - Most Popular and Modern Type of API Call Format
     - This is similiar to an object when we declare one in JS; 
         - Readable by a Human or Computer
         - Can be compressed into a single string
+
     
 Pro-Tip
     - Use the JSON Viewer Extension when trying to read the API call.
+
+How to Parse JSON?
+
+JSON.parse(data)  // data is any variable passed into the parse method.
+
+How to Stringify? (Compress further our object)
+
+JSON.stringify(object) // Converts Object format into string formatting
+
+Status Codes Help Trouble Shoot API Call errors
+[Mozilla-HTTP-Status-Codes] (developer.mozilla.org/en-us/docs/web/http/status)
+    - Types of HTTP Response Codes Include
+        -100 Continue
+        -200 Ok
+        -300 Multiple Choices
+        -400 Bad Request
+        -401 Unauthorized
+        -402 Payment Required
+        -403 Forbidden
+        -404 Not Found
 
 
 Weather Project Challenge
