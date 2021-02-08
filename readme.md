@@ -117,3 +117,41 @@ Weather Project Challenge Weather ICON
 
 1. Create icon const and assign icon return data.
 2. Return Icon URL with Correct ICON with local current weather, MIAMI.
+
+
+Weather Project Challenge Weather POST request
+---
+
+Objective
+
+1. Create a box that lets the user search for a city.
+2. Return Results of City Queried and Update previously declared variables in our project.
+
+
+
+Steps Involved
+
+1. On app.get "/",  lets res.sendFile our index.
+2. Lets add our Label, Input Box and Submit Button. Assign a name for the Input.
+3. Wrap these in a form so you can assign a post method.
+4. Action of the form needs to be our get route. "/" in this example.
+5. Once we have the POST configured on the INDEX file, we can configured the app.post on our APP.js.
+
+
+Weather Project BODY PARSER
+---
+
+Body Parser lets use look through the post data that is sent from our submit button. We must add these two lines of code
+```
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({extended: true}));
+```
+
+
+1. Once we have the bodyParser installed. we change our console.log in the app.post from just a normal string to req.body.cityName 
+
+breakdown = (request.bodyParser.nameForOurInputTag)
+
+2.  Once we have our body parsing the input of our posts. We can now create a query variable and assign the req.body.cityName.
+
+3. Now we can un-comment out our previous code, put inside the post add "query" to one of our res.writes.
