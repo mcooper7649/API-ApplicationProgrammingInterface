@@ -107,3 +107,13 @@ Weather Project Challenge
 8. Use the on Method fort he response and parse the data received. 
 9. Create variables for temp and weather description. 
 10. res.send our Weather Description.
+11. Only 1 res.send allowed.
+12. Send text as h1
+13. res.write to send multiple lines
+
+
+Weather Project Challenge Weather ICON
+---
+
+1. Create icon const and assign icon return data.
+2. Return Icon URL with Correct ICON with local current weather, MIAMI.

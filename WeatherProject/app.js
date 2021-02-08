@@ -14,8 +14,14 @@ app.get("/", function (req, res){
             const weatherData = JSON.parse(data);
             const temp = weatherData.main.temp;
             const weatherDescription = weatherData.weather[0].description;
-            // res.send("Current Temperature is " + temp)
-            res.send("Feels Like: " + weatherDescription)
+            const icon = weatherData.weather[0].icon;
+            const iconUrl = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+            
+
+            res.write("<h1>Current Temperature in Miami is " + temp + " Degress Fahrenheit.</h1>");
+            res.write("<h3>Feels Like: " + weatherDescription + "</h3>");
+            res.write("<img src=" + iconUrl  + ">");
+            res.send();
         })
         
     });
