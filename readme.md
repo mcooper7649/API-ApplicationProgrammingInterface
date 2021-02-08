@@ -103,3 +103,7 @@ Weather Project Challenge
 4. Add Express to App.js (const express = require("expres"))
 5. Add https the same way we added express.
 6. app.get your landing url and in the callback configure the https, API CALL url and log it.
+7. Create our https get and log the response
+8. Use the on Method fort he response and parse the data received. 
+9. Create variables for temp and weather description. 
+10. res.send our Weather Description.
